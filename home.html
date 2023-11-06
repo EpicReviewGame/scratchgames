@@ -83,7 +83,25 @@
         width: 350px;
         height: 80px;
         margin: 20px auto;
-        font-size: 36px;
+        font-size: 26px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Lexend', sans-serif;
+      }
+      
+      #subheading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4fe0b2;
+        border: 2px solid black;
+        border-radius: 50px;
+        width: 350px;
+        height: 55px;
+        margin: 20px auto;
+        font-size: 15px;
         font-weight: bold;
         color: white;
         text-align: center;
@@ -95,7 +113,9 @@
   <body>
     <div id="tsparticles"></div>
     <div class="content">
-      <div id="header">Jittian's</div>
+      <div id="header">Jittian's Game hub</div><div id="subheading">
+        <span id="subtitle">...</span>
+      </div>
       <div class="game-container">
    </button>
       <button class="game-button" data-url="https://ocean-9ywk.onrender.com/ocean"><img src="https://i.postimg.cc/kGD7Q5KC/image.png" alt="Game Image" /><name>Better Site</name>
@@ -263,5 +283,6 @@
         return confirmationMessage; // Webkit, Safari, Chrome etc.
       });
     </script>
+    <script src="/js/subtitle.js"></script>
   </body>
 </html>
