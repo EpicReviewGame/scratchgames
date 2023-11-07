@@ -17,9 +17,13 @@ say[7] = "[...] keeps stealing things outta my pocket!!!";
 say[8] = "real";
 say[9] = "what the frick";
 say[10] = "shut the farts up";
-say[11] = "you are literally a dumbass";
-say[12] = "that darn donkey kong";
-say[13] = "ah ah go crazy!!!!";
+say[11] = "you are literally a dumbass ☝️🤓";
+say[12] = "i put the pennies in eleventh grade";
+say[13] = "muahahahahaha";
+say[14] = "this truly is a billy gets jailed moment";
+say[15] = "l bozo";
+say[16] = "brother blud";
+say[17] = "brother compatriot";
 
 // pick a random greeting
 var howmany = say.length;
