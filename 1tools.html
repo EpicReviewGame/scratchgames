@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jittian's Game Hub - Main Page</title>
+   <link rel="icon" href="https://i.postimg.cc/Bvx2syD1/Google-Docs-2020-Favicon.png" type="image/x-icon"/>
+
+   </button>
+      <button class="game-button" data-url="https://www.example.com"><img src="example-image.jpg" alt="Game Image" /><name>Example Name</name>
+      </button>
+
+
+      </button>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .content {
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .game-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 1000px;
+      }
+
+      .bigger-button {
+        position: relative;
+        z-index: 1;
+        width: 300px;
+        height: 180px;
+        font-size: 20px;
+      }
+
+
+      .game-button {
+        background-color: #4fe0b2;
+        color: white;
+        border: 1.5px solid black;
+        border-radius: 25px;
+        padding: 15px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-family: 'Lexend', sans-serif;
+        font-weight: bold;
+        width: 250px; /* Set a fixed width */
+        height: 150px; /* Set a fixed height */
+      }
+
+      .game-button img {
+        width: 125px;
+        height: 125px;
+        margin-bottom: 10px;
+        border-radius: 50%;
+      }
+
+      #header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4fe0b2;
+        border: 2px solid black;
+        border-radius: 50px;
+        width: 350px;
+        height: 80px;
+        margin: 20px auto;
+        font-size: 26px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Lexend', sans-serif;
+      }
+      
+      #subheading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4fe0b2;
+        border: 2px solid black;
+        border-radius: 50px;
+        width: 350px;
+        height: 55px;
+        margin: 20px auto;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Lexend', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tsparticles"></div>
+    <div class="content">
+      <div id="header">Jittian's Game hub</div><div id="subheading">
+        <span id="subtitle">...</span>
+      </div>
+      <div class="game-container">
+   </button>
+      <button class="game-button" data-url="."><img src="img/imgopencloaked.png" alt="Game Image" /><name>Open in about:blank</name>
+      </button>
+
+      <button class="game-button" data-url="tabcloak.html"><img src="img/imgtabhide.png" alt="Game Image" /><name>AB Cloaker</name>
+      </button>
+
+      <button class="game-button" data-url="ubs.html"><img src="img/proxies.png" alt="Game Image" /><name>"Page Bypassers"</name>
+      </button>
+        
+      <button class="game-button bigger-button" data-url="imgquality.html"><img src="img/noimage.png" alt="Game Image" /><name>Image Quality/name></button>
+      </button>
+
+      <button class="game-button bigger-button" data-url="micrrosoftsam.html"><img src="img/noimage.png" alt="Game Image" /><name>Microsoft Sam/name></button>
+      </button>
+
+      <button class="game-button bigger-button" data-url="micrrosoftsam.html"><img src="img/noimage.png" alt="Game Image" /><name>IMG2TXT/name></button>
+      </button>
+        
+      </div>
+      <script>
+        // JavaScript code for the content goes here
+      </script>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+
+    <script type="text/javascript">
+      const options = {
+        background: {
+          color: "#333333", // the canvas background color
+        },
+        interactivity: {
+          events: {
+            onClick: {
+              // this handles the mouse click event
+              enable: false,
+              mode: "push", // this adds particles
+            },
+            onHover: {
+              // this handles the mouse hover event
+              enable: true,
+              mode: "repulse", // this make particles move away from the mouse
+            },
+          },
+          modes: {
+            push: {
+              quantity: 2, // number of particles to add
+            },
+            repulse: {
+              distance: 100, // the distance of the particles from the mouse
+            },
+          },
+        },
+        particles: {
+          links: {
+            enable: true, // this enables links between particles
+            opacity: 0.3,
+            distance: 105,
+          },
+          move: {
+            enable: true, // this makes particles move
+            speed: { min: 1, max: 3 }, // this is the speed of the particles
+          },
+          opacity: {
+            value: { min: 0.3, max: 0.7 }, // this sets the opacity of the particles
+          },
+          size: {
+            value: { min: 1, max: 3 }, // this sets the size of the particles
+          },
+        },
+      };
+
+      tsParticles.load("tsparticles", options);
+
+      const buttons = document.querySelectorAll('.game-button');
+
+      buttons.forEach(button => {
+        const url = button.dataset.url;
+        button.addEventListener('click', function() {
+          const win = window.open();
+          win.document.body.style.margin = '0';
+          win.document.body.style.height = '100vh';
+          const iframe = win.document.createElement('iframe');
+          iframe.style.border = 'none';
+          iframe.style.width = '100%';
+          iframe.style.height = '100%';
+          iframe.style.margin = '0';
+          iframe.src = url;
+          win.document.body.appendChild(iframe);
+        });
+      });
+
+      window.addEventListener('beforeunload', function(e) {
+        e.preventDefault(); // Cancel the event
+        e.returnValue = ''; // Chrome requires returnValue to be set
+        // Display a message
+        var confirmationMessage = 'Are you sure you want to leave this page?';
+        (e || window.event).returnValue = confirmationMessage; // Gecko + IE
+        return confirmationMessage; // Webkit, Safari, Chrome etc.
+      });
+    </script>
+    <script src="/js/subtitle.js"></script>
+  </body>
+</html>
