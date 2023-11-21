@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+   <body style="background-color:#EAFAF1">
+      <p>For security reasons, we require you to type a password to see these goofies</p>
+      Enter Password:
+      <input type='text' value='' id='input'>
+      <p>Hint: who died on july 31st</p>
+      <input type='checkbox' onclick='protectpasscode()'>Show results
+      <p id='tutorial' style='display:none; color: black;' data-url="ubs.html" class="game-button">gfys</p>
+      <script>
+         function protectpasscode() {
+            var a = document.getElementById('input');
+            var b = document.getElementById('tutorial');
+            if (a.value === 'nonexisty') {
+               b.style.display = 'block';
+            } else {
+               b.style.display = 'none';
+            }
+         }
+      </script>
+      <script type="text/javascript">
+      const buttons = document.querySelectorAll('.game-button');
+
+      buttons.forEach(button => {
+        const url = button.dataset.url;
+        button.addEventListener('click', function() {
+          const win = window.open();
+          win.document.body.style.margin = '0';
+          win.document.body.style.height = '100vh';
+          const iframe = win.document.createElement('iframe');
+          iframe.style.border = 'none';
+          iframe.style.width = '100%';
+          iframe.style.height = '100%';
+          iframe.style.margin = '0';
+          iframe.src = url;
+          win.document.body.appendChild(iframe);
+        });
+      });
+    </script>
+   </body>
+</html>
